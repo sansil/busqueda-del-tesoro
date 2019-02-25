@@ -1,6 +1,6 @@
 {
   "name": "busqueda_del_tesoro",
-  "short_name": "busqueda_del_tesoro",
+  "short_name": "BdelT",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
