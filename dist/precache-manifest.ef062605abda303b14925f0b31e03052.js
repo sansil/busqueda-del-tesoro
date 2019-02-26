@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/busqueda_del_tesoro/js/chunk-vendors.8ae94e9a.js"
   },
   {
-    "revision": "7f0459dae742dfe87faf",
-    "url": "/busqueda_del_tesoro/js/app.d18b8e62.js"
+    "revision": "ae9b8d28fca8499367d8",
+    "url": "/busqueda_del_tesoro/js/app.11e5e88c.js"
   },
   {
     "revision": "31bf0e9b39aa3c930fa1",
     "url": "/busqueda_del_tesoro/js/about.77c93d06.js"
   },
   {
-    "revision": "39bb98bb97a824cb1a7a4ba382ac35cb",
+    "revision": "8c715d1afaf144c6db18f050016533b1",
     "url": "/busqueda_del_tesoro/index.html"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/busqueda_del_tesoro/css/chunk-vendors.9ab6e0b6.css"
   },
   {
-    "revision": "7f0459dae742dfe87faf",
+    "revision": "ae9b8d28fca8499367d8",
     "url": "/busqueda_del_tesoro/css/app.019dc1e3.css"
   }
 ];
