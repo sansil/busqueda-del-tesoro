@@ -5,9 +5,9 @@
     <a class="button is-primary" @click="openModalCodigo=true, state.codigo=''">Código</a>
 
     <!-- modal Code -->
-    <div class="modal" :class="{ 'is-active': openModalCodigo }">
+    <div id="modal-id" class="modal" :class="{ 'is-active': openModalCodigo }">
       <div class="modal-background"></div>
-      <div class="modal-card">
+      <div class="modal-card animated jackInTheBox">
         <header class="modal-card-head">
           <p class="modal-card-title">Ingresar código</p>
           <button class="delete" aria-label="close" @click="openModalCodigo=false "></button>
@@ -31,7 +31,7 @@
     <!-- modal succes -->
     <div class="modal" :class="{ 'is-active': openModalSucces }">
       <div class="modal-background"></div>
-      <div class="modal-card">
+      <div class="modal-card animated heartBeat">
         <header class="modal-card-head">
           <p class="modal-card-title">Perfecto!</p>
           <button class="delete" aria-label="close" @click="openModalSucces=false "></button>
@@ -51,7 +51,7 @@
     <!-- modal error -->
     <div class="modal" :class="{ 'is-active': openModalError }">
       <div class="modal-background"></div>
-      <div class="modal-card">
+      <div class="modal-card animated shake">
         <header class="modal-card-head">
           <p class="modal-card-title">Nop, código incorrecto!</p>
           <button class="delete" aria-label="close" @click="openModalError=false "></button>
@@ -68,19 +68,19 @@
     <!-- modal win -->
     <div class="modal" :class="{ 'is-active': openModalWin }">
       <div class="modal-background"></div>
-      <div class="modal-card">
+      <div class="modal-card animated flip">
         <header class="modal-card-head">
           <p class="modal-card-title">Felicitaciones!</p>
           <button class="delete" aria-label="close" @click="openModalWin=false "></button>
         </header>
         <section class="modal-card-body">
-          <p style="color:yellow;">El tesoro contiene el siguiente mensaje:</p>
-          <p style="color:white;">
+          <p class="modal-text">El tesoro contiene el siguiente mensaje:</p>
+          <p class="modal-win-text">
             <b>
               <i>"Sofi cra"</i>
             </b>
           </p>
-          <p style="color:yellow;">Lleva este mensaje a la carpa principal!</p>
+          <p class="modal-text">Lleva este mensaje a la carpa principal!</p>
           <img src="@/assets/hunt_treasure.png">
         </section>
         <footer class="modal-card-foot">
@@ -93,13 +93,13 @@
     <a class="button is-link" @click="openModalPista=true">Pista</a>
     <div class="modal" :class="{ 'is-active': openModalPista }">
       <div class="modal-background"></div>
-      <div class="modal-card">
+      <div class="modal-card animated jackInTheBox">
         <header class="modal-card-head">
           <p class="modal-card-title">Pista</p>
           <button class="delete" aria-label="close" @click="openModalPista=false"></button>
         </header>
         <section class="modal-card-body">
-          <p style="color:yellow;">{{state.pista}}</p>
+          <p class="modal-text">{{state.pista}}</p>
         </section>
         <footer class="modal-card-foot">
           <a class="button is-success" @click="openModalPista=false">Listo!</a>
@@ -113,6 +113,7 @@
 // @ is an alias to /src
 //import chronometer from "@/components/Chronometer.vue";
 require("@/assets/sass/main.scss");
+require("@/assets/css/animate.css");
 
 // function handleVisibilityChange() {
 //   if (document.hidden) {
@@ -190,6 +191,7 @@ export default {
 <style>
 .codigo_input {
   width: 40%;
+  background-color: #ffff7a;
   border: 1px solid #c8ccd4;
   border-left: none;
   border-right: none;
@@ -198,10 +200,32 @@ export default {
   height: 3rem;
   font-size: 1.5rem;
   text-align: center;
+  color: rgb(35, 153, 213);
 }
 
 .codigo_input:focus {
   outline: none;
+}
+
+.modal-win-text {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.modal-text {
+  color: #ffff7a;
+  font-size: 1.4rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
 
