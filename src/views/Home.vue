@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <!-- <img alt="Vue logo" src="../assets/map.jpg"> -->
     <!-- <chronometer></chronometer> -->
     <a class="button is-primary" @click="openModalCodigo=true, state.codigo=''">Código</a>
 

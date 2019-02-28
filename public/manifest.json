@@ -1,5 +1,5 @@
 {
-  "name": "busqueda_del_tesoro",
+  "name": "busqueda del tesoro",
   "short_name": "BdelT",
   "icons": [
     {
@@ -15,6 +15,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#2399d5",
   "theme_color": "#2399d5"
 }
