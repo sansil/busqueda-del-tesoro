@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/busqueda-del-tesoro/precache-manifest.eca9ef06def25b795634e49ae5cc2482.js"
+  "/busqueda-del-tesoro/precache-manifest.60dde5fbb96db1f84ca6b6f50fedc5f4.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "busqueda_del_tesoro"});
