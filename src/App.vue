@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Busqueda del tesoro del cumple de Sofi!</router-link>
+      <router-link to="/">Búesqueda del tesoro!</router-link>|
+      <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>

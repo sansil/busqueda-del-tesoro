@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/js/chunk-vendors.d85ba058.js"
   },
   {
-    "revision": "24e7ca2eae4dcebb39b7",
-    "url": "/busqueda-del-tesoro/js/app.1829bb19.js"
+    "revision": "0f2de4bc2e6af749e245",
+    "url": "/busqueda-del-tesoro/js/app.62259be1.js"
   },
   {
     "revision": "31bf0e9b39aa3c930fa1",
     "url": "/busqueda-del-tesoro/js/about.77c93d06.js"
   },
   {
-    "revision": "bb85a2b750ec3d0790e3ded59dcbc9cd",
+    "revision": "314512b3bc7f2c43013da309d3601eea",
     "url": "/busqueda-del-tesoro/index.html"
   },
   {
-    "revision": "24e7ca2eae4dcebb39b7",
+    "revision": "0f2de4bc2e6af749e245",
     "url": "/busqueda-del-tesoro/css/app.5dbce9f3.css"
   }
 ];
