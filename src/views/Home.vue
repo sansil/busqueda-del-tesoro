@@ -1,8 +1,17 @@
 <template>
-  <div class="home">
+  <div class="home container">
     <!-- <img alt="Vue logo" src="../assets/map.jpg"> -->
     <!-- <chronometer></chronometer> -->
     <a class="button is-primary" @click="openModalCodigo=true, state.codigo=''">Código</a>
+    <a class="button is-link" @click="openModalPista=true">Pista</a>
+
+    <div style="padding:1rem;">
+      <progress
+        class="progress is-success"
+        :value="state.avance"
+        :max="Object.keys(this.pistasDictionary).length"
+      >{{state.avance}}</progress>
+    </div>
 
     <!-- modal Code -->
     <div id="modal-id" class="modal" :class="{ 'is-active': openModalCodigo }">
@@ -90,7 +99,6 @@
     </div>
 
     <!-- modal  tip -->
-    <a class="button is-link" @click="openModalPista=true">Pista</a>
     <div class="modal" :class="{ 'is-active': openModalPista }">
       <div class="modal-background"></div>
       <div class="modal-card animated jackInTheBox">
