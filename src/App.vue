@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Búesqueda del tesoro!</router-link>|
-      <router-link to="/about">Start</router-link>
+      <router-link to="/about">Start</router-link>|
+      <router-link to="/joystick">RC</router-link>
     </div>
     <router-view/>
   </div>

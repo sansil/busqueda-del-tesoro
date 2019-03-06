@@ -122,7 +122,6 @@
 //import chronometer from "@/components/Chronometer.vue";
 require("@/assets/sass/main.scss");
 require("@/assets/css/animate.css");
-
 // function handleVisibilityChange() {
 //   if (document.hidden) {
 //     console.log("hidden");
