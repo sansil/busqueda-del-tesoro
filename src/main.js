@@ -4,6 +4,9 @@ import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
 Vue.config.productionTip = false;
+import VueConfetti from "vue-confetti";
+
+Vue.use(VueConfetti);
 
 new Vue({
   router,

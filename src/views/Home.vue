@@ -58,7 +58,7 @@
     </div>
 
     <!-- modal error -->
-    <div class="modal" :class="{ 'is-active': openModalError }">
+    <!-- <div class="modal" :class="{ 'is-active': openModalError }">
       <div class="modal-background"></div>
       <div class="modal-card animated shake">
         <header class="modal-card-head">
@@ -72,7 +72,12 @@
           <a class="button is-success" @click="openModalError=false">Ops!</a>
         </footer>
       </div>
-    </div>
+    </div>-->
+
+    <modal-juego @change="onErrorChange" :openModalError.sync="openModalError">
+      <template v-slot:title>Nop, código incorrecto!</template>
+      <template v-slot:footer>Ops!</template>
+    </modal-juego>
 
     <!-- modal win -->
     <div class="modal" :class="{ 'is-active': openModalWin }">
@@ -119,7 +124,7 @@
 
 <script>
 // @ is an alias to /src
-//import chronometer from "@/components/Chronometer.vue";
+import modalJuego from "@/components/ModalJuego.vue";
 require("@/assets/sass/main.scss");
 require("@/assets/css/animate.css");
 // function handleVisibilityChange() {
@@ -134,6 +139,7 @@ export default {
   name: "home",
   components: {
     //chronometer
+    modalJuego
   },
   data() {
     return {
@@ -170,6 +176,8 @@ export default {
         // muestro mensaje y aumento avance
         this.state.avance = Number(this.state.avance) + 1;
         if (this.state.avance >= Object.keys(this.pistasDictionary).length) {
+          //GANO
+          this.$confetti.start();
           this.openModalWin = true;
           this.openModalSucces = false;
           return;
@@ -183,6 +191,10 @@ export default {
       } else {
         this.openModalError = true;
       }
+    },
+    onErrorChange(e) {
+      console.log(e);
+      this.openModalError = e;
     }
   },
   mounted() {

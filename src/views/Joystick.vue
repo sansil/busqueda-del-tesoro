@@ -17,20 +17,21 @@ export default {
     var joystickL = nipplejs.create({
       zone: document.getElementById("left"),
       mode: "static",
-      position: { left: "20%", top: "50%" },
+      position: { left: "30%", top: "50%" },
       color: "green",
-      size: 100,
+      size: 150,
       lockY: true
     });
 
     var joystickR = nipplejs.create({
       zone: document.getElementById("right"),
       mode: "static",
-      position: { right: "20%", top: "50%" },
+      position: { right: "30%", top: "50%" },
       color: "rgb(35, 153, 213)",
-      size: 100,
+      size: 150,
       lockX: true
     });
+    console.log(joystickR);
 
     joystickL.on("move", function(evt, data) {
       // Do something.
