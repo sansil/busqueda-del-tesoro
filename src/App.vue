@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="background"></div>
     <div id="nav">
       <router-link to="/">Búesqueda del tesoro!</router-link>|
       <router-link to="/about">Start</router-link>|
@@ -12,6 +13,15 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Dosis");
+
+.background {
+  background-color: #bcaaa4;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
 #app {
   font-family: "Dosis", sans-serif;
   font-size: 1.6rem;
@@ -31,6 +41,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
 }
 </style>

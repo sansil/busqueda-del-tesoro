@@ -10,7 +10,8 @@
         class="progress is-success"
         :value="state.avance"
         :max="Object.keys(this.pistasDictionary).length"
-      >{{state.avance}}</progress>
+      ></progress>
+      {{state.avance}}/{{Object.keys(this.pistasDictionary).length}}
     </div>
 
     <!-- modal Code -->
@@ -38,87 +39,58 @@
     </div>
 
     <!-- modal succes -->
-    <div class="modal" :class="{ 'is-active': openModalSucces }">
-      <div class="modal-background"></div>
-      <div class="modal-card animated heartBeat">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Perfecto!</p>
-          <button class="delete" aria-label="close" @click="openModalSucces=false "></button>
-        </header>
-        <section class="modal-card-body">
-          <img src="@/assets/check.png">
-        </section>
-        <footer class="modal-card-foot">
-          <a
-            class="button is-success"
-            @click="openModalPista=true, openModalSucces=false"
-          >Siguiente pista</a>
-        </footer>
-      </div>
-    </div>
+    <modal-juego
+      v-on:change="onSuccesChange"
+      :openModalFlag="openModalSucces"
+      effect="animated heartBeat"
+    >
+      <template v-slot:footer>Siguiente pista</template>
+      <template v-slot:img>
+        <img src="@/assets/check.png">
+      </template>
+    </modal-juego>
 
     <!-- modal error -->
-    <!-- <div class="modal" :class="{ 'is-active': openModalError }">
-      <div class="modal-background"></div>
-      <div class="modal-card animated shake">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Nop, código incorrecto!</p>
-          <button class="delete" aria-label="close" @click="openModalError=false "></button>
-        </header>
-        <section class="modal-card-body">
-          <img src="@/assets/skull-crossbones-48.png">
-        </section>
-        <footer class="modal-card-foot">
-          <a class="button is-success" @click="openModalError=false">Ops!</a>
-        </footer>
-      </div>
-    </div>-->
-
-    <modal-juego @change="onErrorChange" :openModalError.sync="openModalError">
+    <modal-juego
+      v-on:change="onErrorChange"
+      :openModalFlag="openModalError"
+      effect="animated shake"
+    >
       <template v-slot:title>Nop, código incorrecto!</template>
       <template v-slot:footer>Ops!</template>
+      <template v-slot:img>
+        <img src="@/assets/skull-crossbones-48.png">
+      </template>
     </modal-juego>
 
     <!-- modal win -->
-    <div class="modal" :class="{ 'is-active': openModalWin }">
-      <div class="modal-background"></div>
-      <div class="modal-card animated flip">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Felicitaciones!</p>
-          <button class="delete" aria-label="close" @click="openModalWin=false "></button>
-        </header>
-        <section class="modal-card-body">
-          <p class="modal-text">El tesoro contiene el siguiente mensaje:</p>
-          <p class="modal-win-text">
-            <b>
-              <i>"Sofi cra"</i>
-            </b>
-          </p>
-          <p class="modal-text">Lleva este mensaje a la carpa principal!</p>
-          <img src="@/assets/hunt_treasure.png">
-        </section>
-        <footer class="modal-card-foot">
-          <a class="button is-success" @click="openModalWin=false">yeah!</a>
-        </footer>
-      </div>
-    </div>
+    <modal-juego v-on:change="onWinChange" :openModalFlag="openModalWin" effect="animated flip">
+      <template v-slot:title>Felicitaciones!</template>
+      <template v-slot:footer>yeah!</template>
+      <template v-slot:img>
+        <p class="modal-text">El tesoro contiene el siguiente mensaje:</p>
+        <p class="modal-win-text">
+          <b>
+            <i>"Sofi cra"</i>
+          </b>
+        </p>
+        <p class="modal-text">Lleva este mensaje a la carpa principal!</p>
+        <img src="@/assets/hunt_treasure.png">
+      </template>
+    </modal-juego>
 
     <!-- modal  tip -->
-    <div class="modal" :class="{ 'is-active': openModalPista }">
-      <div class="modal-background"></div>
-      <div class="modal-card animated jackInTheBox">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Pista</p>
-          <button class="delete" aria-label="close" @click="openModalPista=false"></button>
-        </header>
-        <section class="modal-card-body">
-          <p class="modal-text">{{state.pista}}</p>
-        </section>
-        <footer class="modal-card-foot">
-          <a class="button is-success" @click="openModalPista=false">Listo!</a>
-        </footer>
-      </div>
-    </div>
+    <modal-juego
+      v-on:change="onPistaChange"
+      :openModalFlag="openModalPista"
+      effect="animated jackInTheBox"
+    >
+      <template v-slot:title>Pista</template>
+      <template v-slot:footer>Listo!</template>
+      <template v-slot:img>
+        <p class="modal-text">{{state.pista}}</p>
+      </template>
+    </modal-juego>
   </div>
 </template>
 
@@ -193,8 +165,19 @@ export default {
       }
     },
     onErrorChange(e) {
-      console.log(e);
       this.openModalError = e;
+    },
+    onCodigoChange(e) {
+      this.openModalCodigo = e;
+    },
+    onSuccesChange(e) {
+      this.openModalSucces = e;
+    },
+    onWinChange(e) {
+      this.openModalWin = e;
+    },
+    onPistaChange(e) {
+      this.openModalPista = e;
     }
   },
   mounted() {

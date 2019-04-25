@@ -1,7 +1,7 @@
 <template>
-  <div class="modal" :class="{ 'is-active': openModalError }">
+  <div class="modal" :class="{ 'is-active': openModalFlag }">
     <div class="modal-background"></div>
-    <div class="modal-card animated shake">
+    <div class="modal-card" :class="effect">
       <header class="modal-card-head">
         <p class="modal-card-title">
           <slot name="title"></slot>
@@ -9,7 +9,8 @@
         <button class="delete" aria-label="close" @click="modalevent "></button>
       </header>
       <section class="modal-card-body">
-        <img src="@/assets/skull-crossbones-48.png">
+        <slot name="img"></slot>
+        <slot name="input"></slot>
       </section>
       <footer class="modal-card-foot">
         <a class="button is-success" @click="modalevent">
@@ -23,9 +24,13 @@
 <script>
 export default {
   props: {
-    openModalError: {
+    openModalFlag: {
       type: Boolean,
       default: false
+    },
+    effect: {
+      type: String,
+      default: "animated shake"
     }
   },
   data() {
@@ -33,9 +38,10 @@ export default {
   },
   methods: {
     modalevent() {
-      let modifiedList = this.openModalError;
+      console.log("event");
+      let modifiedList = this.openModalFlag;
       modifiedList = false;
-      this.$emit(("update:openModalError", modifiedList));
+      this.$emit("change", modifiedList);
     }
   }
 };
