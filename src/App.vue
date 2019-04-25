@@ -3,8 +3,8 @@
     <div class="background"></div>
     <div id="nav">
       <router-link to="/">Búesqueda del tesoro!</router-link>|
-      <router-link to="/about">Start</router-link>|
-      <router-link to="/joystick">RC</router-link>
+      <router-link to="/about">Start</router-link>
+|
     </div>
     <router-view/>
   </div>
@@ -41,6 +41,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: white;
+  color: Black;
 }
 </style>

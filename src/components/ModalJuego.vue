@@ -9,6 +9,7 @@
         <button class="delete" aria-label="close" @click="modalevent "></button>
       </header>
       <section class="modal-card-body">
+        <slot name="body-text"></slot>
         <slot name="img"></slot>
         <slot name="input"></slot>
       </section>

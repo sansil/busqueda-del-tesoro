@@ -87,8 +87,13 @@
     >
       <template v-slot:title>Pista</template>
       <template v-slot:footer>Listo!</template>
-      <template v-slot:img>
+      <template v-slot:body-text>
         <p class="modal-text">{{state.pista}}</p>
+      </template>
+      <template v-slot:img>
+        <div v-if="state.con_img">
+          <img :src="getImgUrl(state.img)">
+        </div>
       </template>
     </modal-juego>
   </div>
@@ -120,18 +125,22 @@ export default {
       openModalSucces: false,
       openModalError: false,
       openModalWin: false,
-      state: { avance: 0, codigo: "", pista: "" },
+      state: { avance: 0, codigo: "", pista: "", img: "", con_img: false },
       pistasDictionary: {
         // numero de avance código pista
         0: {
           codigo: "1345",
           pista:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil inventore"
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil inventore",
+          con_img: true,
+          img: "codigo_diccionario.png"
         },
         1: {
           codigo: "3421",
           pista:
-            " Explicabo nihil inventore, iste repellat sit aspernatur dolores earum nemo!"
+            "Explicabo nihil inventore, iste repellat sit aspernatur dolores earum nemo!",
+          con_img: true,
+          img: "@/assets/hunt_treasure.png"
         }
       }
     };
@@ -158,7 +167,9 @@ export default {
         this.state = {
           avance: this.state.avance,
           codigo: "",
-          pista: this.pistasDictionary[this.state.avance].pista
+          pista: this.pistasDictionary[this.state.avance].pista,
+          img: this.pistasDictionary[0].img,
+          con_img: this.pistasDictionary[0].con_img
         };
       } else {
         this.openModalError = true;
@@ -178,13 +189,18 @@ export default {
     },
     onPistaChange(e) {
       this.openModalPista = e;
+    },
+    getImgUrl(pic) {
+      return require("../assets/" + pic);
     }
   },
   mounted() {
     this.state = {
       avance: 0,
       codigo: "",
-      pista: this.pistasDictionary[0].pista
+      pista: this.pistasDictionary[0].pista,
+      img: this.pistasDictionary[0].img,
+      con_img: this.pistasDictionary[0].con_img
     };
   }
 };
