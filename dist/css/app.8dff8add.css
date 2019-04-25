@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis);#app{font-family:Dosis,sans-serif;font-size:1.6rem;line-height:1.6rem;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50}#nav{padding:30px}#nav a{font-weight:700;color:#2c3e50}#nav a.router-link-exact-active{color:#42b983}
+@import url(https://fonts.googleapis.com/css?family=Dosis);.background{background-color:#bcaaa4;position:absolute;height:100vh;width:100%;z-index:-1}#app{font-family:Dosis,sans-serif;font-size:1.6rem;line-height:1.6rem;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50}#nav{padding:30px}#nav a{font-weight:700;color:#2c3e50}#nav a.router-link-exact-active{color:#fff}
 
 /*! bulma.io v0.7.4 | MIT License | github.com/jgthms/bulma */@-webkit-keyframes spinAround{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
 
