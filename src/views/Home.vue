@@ -88,7 +88,7 @@
       <template v-slot:title>Pista</template>
       <template v-slot:footer>Listo!</template>
       <template v-slot:body-text>
-        <p class="modal-text">{{state.pista}}</p>
+        <p class="modal-text" v-html="state.pista"></p>
       </template>
       <template v-slot:img>
         <div v-if="state.con_img">
@@ -130,17 +130,22 @@ export default {
         // numero de avance código pista
         0: {
           codigo: "1345",
-          pista:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nihil inventore",
+          pista: "La pista se encuentra en el siguiente lugar en el mapa!",
           con_img: true,
           img: "codigo_diccionario.png"
         },
         1: {
           codigo: "3421",
           pista:
-            "Explicabo nihil inventore, iste repellat sit aspernatur dolores earum nemo!",
+            "La siguiente pista se encuentra en un: <p><b>Populus alba</b></p>",
+          con_img: false,
+          img: "  "
+        },
+        2: {
+          codigo: "1234",
+          pista: "La respuesta es el código!",
           con_img: true,
-          img: "@/assets/hunt_treasure.png"
+          img: "ingenio.jpg"
         }
       }
     };
@@ -168,8 +173,8 @@ export default {
           avance: this.state.avance,
           codigo: "",
           pista: this.pistasDictionary[this.state.avance].pista,
-          img: this.pistasDictionary[0].img,
-          con_img: this.pistasDictionary[0].con_img
+          img: this.pistasDictionary[this.state.avance].img,
+          con_img: this.pistasDictionary[this.state.avance].con_img
         };
       } else {
         this.openModalError = true;
@@ -234,6 +239,7 @@ export default {
 .modal-text {
   color: #ffff7a;
   font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .fade-enter-active,
