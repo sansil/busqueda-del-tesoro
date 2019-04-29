@@ -146,7 +146,7 @@ export default {
           img: "  "
         },
         2: {
-          codigo: "1234",
+          codigo: "25",
           pista: "La respuesta es el código!",
           con_img: true,
           img: "ingenio.jpg"

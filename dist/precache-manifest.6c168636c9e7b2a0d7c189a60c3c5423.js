@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/mapa.57bcd0d9.jpg"
   },
   {
-    "revision": "300dbae7561f7bb65582",
+    "revision": "6c79c29c90d33a3111be",
     "url": "/busqueda-del-tesoro/css/app.e5348470.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/js/about.41bd3c81.js"
   },
   {
-    "revision": "300dbae7561f7bb65582",
-    "url": "/busqueda-del-tesoro/js/app.7be01e5b.js"
+    "revision": "6c79c29c90d33a3111be",
+    "url": "/busqueda-del-tesoro/js/app.c1dd4473.js"
   },
   {
     "revision": "57bcd0d9fec0a2b8ede2fe787c43eed2",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/mapa_intro.1780063e.jpg"
   },
   {
-    "revision": "89de9904ebff36b9a91d9b3e50e6c1eb",
+    "revision": "77f16227ea5617e47cf260f789f6bfff",
     "url": "/busqueda-del-tesoro/index.html"
   },
   {
