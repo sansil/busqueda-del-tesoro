@@ -12,12 +12,12 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/mapa.57bcd0d9.jpg"
   },
   {
-    "revision": "31fd6eefbf87fdbb98e5",
+    "revision": "300dbae7561f7bb65582",
     "url": "/busqueda-del-tesoro/css/app.e5348470.css"
   },
   {
-    "revision": "632b866d545448350520",
-    "url": "/busqueda-del-tesoro/js/chunk-vendors.66e90eb9.js"
+    "revision": "dd4ebe4ede87409f68e4",
+    "url": "/busqueda-del-tesoro/js/chunk-vendors.e36851f9.js"
   },
   {
     "revision": "aa50a063c416d9a44696994689c984fa",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/codigo_diccionario.da312025.png"
   },
   {
-    "revision": "0286cf084572a3f27d43",
-    "url": "/busqueda-del-tesoro/js/about.c2ff6b6c.js"
+    "revision": "570fca9290c392baf452",
+    "url": "/busqueda-del-tesoro/js/about.41bd3c81.js"
   },
   {
-    "revision": "31fd6eefbf87fdbb98e5",
-    "url": "/busqueda-del-tesoro/js/app.be19cede.js"
+    "revision": "300dbae7561f7bb65582",
+    "url": "/busqueda-del-tesoro/js/app.7be01e5b.js"
   },
   {
     "revision": "57bcd0d9fec0a2b8ede2fe787c43eed2",
@@ -48,11 +48,11 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/mapa_intro.1780063e.jpg"
   },
   {
-    "revision": "4771b464c1a3fc4410600dcd11e1599f",
+    "revision": "89de9904ebff36b9a91d9b3e50e6c1eb",
     "url": "/busqueda-del-tesoro/index.html"
   },
   {
-    "revision": "0286cf084572a3f27d43",
+    "revision": "570fca9290c392baf452",
     "url": "/busqueda-del-tesoro/css/about.fd506bbb.css"
   }
 ];

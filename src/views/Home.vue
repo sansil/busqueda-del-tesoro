@@ -14,6 +14,9 @@
       {{state.avance}}/{{Object.keys(this.pistasDictionary).length}}
     </div>
 
+    <Photoswipe>
+      <img :src="srcMapaImg" :data-pswp-src="srcMapaImg">
+    </Photoswipe>
     <!-- modal Code -->
     <div id="modal-id" class="modal" :class="{ 'is-active': openModalCodigo }">
       <div class="modal-background"></div>
@@ -120,6 +123,7 @@ export default {
   },
   data() {
     return {
+      srcMapaImg: "",
       openModalPista: false,
       openModalCodigo: false,
       openModalSucces: false,
@@ -200,6 +204,7 @@ export default {
     }
   },
   mounted() {
+    this.srcMapaImg = this.getImgUrl("mapa.jpg");
     this.state = {
       avance: 0,
       codigo: "",
