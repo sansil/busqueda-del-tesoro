@@ -2,9 +2,8 @@
   <div id="app">
     <div class="background"></div>
     <div id="nav">
-      <router-link to="/">Búesqueda del tesoro!</router-link>|
-      <router-link to="/about">Start</router-link>
-|
+      <router-link to="/">Búesqueda del tesoro!</router-link>
+      <!-- <router-link to="/about">Start</router-link>| -->
     </div>
     <router-view/>
   </div>
@@ -13,8 +12,13 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Pirata+One");
 
 .background {
+  background-image: url("./assets/Preboda-36.jpg");
+  filter: opacity(70%);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #bcaaa4;
   position: absolute;
   height: 100vh;
@@ -23,7 +27,7 @@
 }
 
 #app {
-  font-family: "Dosis", sans-serif;
+  font-family: "Pirata One", cursive;
   font-size: 1.6rem;
   line-height: 1.6rem;
   -webkit-font-smoothing: antialiased;

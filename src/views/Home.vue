@@ -14,9 +14,9 @@
       {{state.avance}}/{{Object.keys(this.pistasDictionary).length}}
     </div>
 
-    <Photoswipe>
+    <!-- <Photoswipe>
       <img :src="srcMapaImg" :data-pswp-src="srcMapaImg">
-    </Photoswipe>
+    </Photoswipe>-->
     <!-- modal Code -->
     <div id="modal-id" class="modal" :class="{ 'is-active': openModalCodigo }">
       <div class="modal-background"></div>
@@ -29,7 +29,7 @@
           <input
             class="codigo_input"
             type="text"
-            maxlength="4"
+            maxlength="8"
             placeholder="CÓDIGO"
             oninput="this.value=this.value.replace(/[^0-9]/g,'');"
             v-model="state.codigo"
@@ -105,6 +105,7 @@
 <script>
 // @ is an alias to /src
 import modalJuego from "@/components/ModalJuego.vue";
+
 require("@/assets/sass/main.scss");
 require("@/assets/css/animate.css");
 // function handleVisibilityChange() {
@@ -150,6 +151,34 @@ export default {
           pista: "La respuesta es el código!",
           con_img: true,
           img: "ingenio.jpg"
+        },
+        3: {
+          codigo: "1234",
+          pista:
+            'Los ingredientes del pesto genovece son:<div class="pista-div"> <p>1- Albaca</p><p>2- ajo</p><p>3- Queso Parmesano</p> <p class="pregunta">4- ?</p></div>',
+          con_img: false,
+          img: ""
+        },
+        4: {
+          codigo: "4613725",
+          pista:
+            'El orden correcto del proceso para hacer vino es: <div class="pista-div"> <p>3- Prensado</p><p>2- Crianza</p><p>1- Fermentación alcóholica</p><p>6- Despalillado</p> <p>4- Cosecha</p><p>5- Embotellado</p><p>7- Fermentación maloláctica</p></div> El orden correcto es el código!',
+          con_img: false,
+          img: ""
+        },
+        5: {
+          codigo: "1234",
+          pista:
+            "La siguiente pista se encuentra en una planta como la de la imagen",
+          con_img: true,
+          img: "hojaVid.jpeg"
+        },
+        6: {
+          codigo: "1234",
+          pista:
+            'La próxima pista se encuentra en: <div class="pista-div">-34.874916, -56.201996</div>',
+          con_img: false,
+          img: ""
         }
       }
     };
@@ -255,6 +284,15 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+.pista-div {
+  text-align: center;
+  color: black;
+}
+
+.pregunta {
+  color: red;
 }
 </style>
 
