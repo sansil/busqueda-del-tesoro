@@ -1,11 +1,15 @@
 <template>
   <div>
-    <div class="background-start"></div>
-    <div class="card-inicio">
-      <div class="btn-choose">
-        <a class="button is-success" @click="goEquipoVerde">Equipo Verde</a>
-        <a class="button is-warning" @click="goEquipoAmarillo">Equipo Amarillo</a>
-        <a class="button is-danger" @click="goEquipoRojo">Equipo Rojo</a>
+    <!-- <div class="background-start"></div> -->
+    <div class="contenedor">
+      <img src="@/assets/test2.png" alt="img-pre">
+      <div class="card-inicio">
+        <h1>Búsqueda del Tesoro</h1>
+        <div class="btn-choose">
+          <a class="button is-success" @click="goEquipoVerde">Equipo Verde</a>
+          <a class="button is-warning" @click="goEquipoAmarillo">Equipo Amarillo</a>
+          <a class="button is-danger" @click="goEquipoRojo">Equipo Rojo</a>
+        </div>
       </div>
     </div>
     <!-- <p>ppp</p> -->
@@ -45,9 +49,26 @@ export default {
   position: absolute;
 }
 
-.card-inicio {
+.contenedor {
   position: relative;
-  top: 190px;
+  text-align: center;
+}
+.contenedor img {
+  padding-top: 3rem;
+}
+.card-inicio {
+  /* position: relative;
+  top: 190px; */
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.card-inicio h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: black;
 }
 
 .btn-choose {

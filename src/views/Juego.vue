@@ -1,8 +1,8 @@
 <template>
-  <div class="hero-body home container">
+  <div class="hero-body home">
     <div class="container">
-      <h1 class="title">Búsqueda del tesoro</h1>
-      <h2 class="subtitle">Grupo Rojo</h2>
+      <h1 class="title">Equipo {{equipo}}</h1>
+      <!-- <h2 class="subtitle">Grupo {{equipo}}</h2> -->
     </div>
 
     <!-- <img alt="Vue logo" src="../assets/map.jpg"> -->
@@ -224,6 +224,10 @@ export default {
 <style>
 .home {
   width: 100%;
+}
+
+.container h1 {
+  margin-bottom: 2rem;
 }
 .codigo_input {
   width: 40%;

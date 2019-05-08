@@ -1,31 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "c39f4c5bc9cc3e71805f9160ca500dbd",
-    "url": "/busqueda-del-tesoro/img/textura.c39f4c5b.png"
+    "revision": "77bb59852691ee0f177db605e4efb9c0",
+    "url": "/busqueda-del-tesoro/img/naranja_pista.77bb5985.jpeg"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/busqueda-del-tesoro/robots.txt"
   },
   {
-    "revision": "77bb59852691ee0f177db605e4efb9c0",
-    "url": "/busqueda-del-tesoro/img/naranja_pista.77bb5985.jpeg"
+    "revision": "57bcd0d9fec0a2b8ede2fe787c43eed2",
+    "url": "/busqueda-del-tesoro/img/mapa.57bcd0d9.jpeg"
   },
   {
-    "revision": "bdd7b45855a1ec63fffe",
-    "url": "/busqueda-del-tesoro/css/app.2071a03b.css"
+    "revision": "a6265368d600dfeb3d40",
+    "url": "/busqueda-del-tesoro/css/app.0d6ca699.css"
   },
   {
     "revision": "d0143498358ec607ddaf",
     "url": "/busqueda-del-tesoro/js/chunk-vendors.d842b85d.js"
   },
   {
-    "revision": "74715c12b39dd967512fdd3ec4a0ddc9",
-    "url": "/busqueda-del-tesoro/img/test.74715c12.png"
-  },
-  {
-    "revision": "97eb98a913cacf32ad8ff7f3647a53ee",
-    "url": "/busqueda-del-tesoro/img/fdsf.97eb98a9.png"
+    "revision": "162f3bc85287316e966c1451d8c392b5",
+    "url": "/busqueda-del-tesoro/img/test.162f3bc8.png"
   },
   {
     "revision": "aa50a063c416d9a44696994689c984fa",
@@ -44,20 +40,24 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/map.ca5dead7.jpg"
   },
   {
-    "revision": "512dc6f3da0c046a5386",
-    "url": "/busqueda-del-tesoro/js/about.2ead2c6e.js"
+    "revision": "c39f4c5bc9cc3e71805f9160ca500dbd",
+    "url": "/busqueda-del-tesoro/img/textura.c39f4c5b.png"
   },
   {
-    "revision": "bdd7b45855a1ec63fffe",
-    "url": "/busqueda-del-tesoro/js/app.03f520f0.js"
+    "revision": "cbe0646d5d01a962f5b5",
+    "url": "/busqueda-del-tesoro/js/about.9e982d3e.js"
   },
   {
-    "revision": "57bcd0d9fec0a2b8ede2fe787c43eed2",
-    "url": "/busqueda-del-tesoro/img/mapa.57bcd0d9.jpeg"
+    "revision": "a6265368d600dfeb3d40",
+    "url": "/busqueda-del-tesoro/js/app.ade98ffc.js"
   },
   {
     "revision": "76b464c21d03f5ad1519488100f9fe49",
     "url": "/busqueda-del-tesoro/img/ingenio.76b464c2.jpg"
+  },
+  {
+    "revision": "fdd913ff42299da0834bfcb6e362c5fb",
+    "url": "/busqueda-del-tesoro/img/test2.fdd913ff.png"
   },
   {
     "revision": "ac98880ea1f7329f53c75963113600e2",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/portada.a2128004.jpeg"
   },
   {
-    "revision": "0afe2c262ae3f659b8c2b2af8bd425be",
+    "revision": "d159059a8ee630f7a4a292c6e3439552",
     "url": "/busqueda-del-tesoro/index.html"
   },
   {
-    "revision": "512dc6f3da0c046a5386",
-    "url": "/busqueda-del-tesoro/css/about.310559db.css"
+    "revision": "cbe0646d5d01a962f5b5",
+    "url": "/busqueda-del-tesoro/css/about.d6a6caa0.css"
   }
 ];
