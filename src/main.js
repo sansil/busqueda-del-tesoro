@@ -7,9 +7,9 @@ Vue.config.productionTip = false;
 import VueConfetti from "vue-confetti";
 
 Vue.use(VueConfetti);
-import Photoswipe from 'vue-pswipe'
+// import Photoswipe from 'vue-pswipe'
 
-Vue.use(Photoswipe)
+// Vue.use(Photoswipe)
 
 new Vue({
   router,

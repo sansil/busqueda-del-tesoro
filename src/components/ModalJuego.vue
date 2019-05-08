@@ -15,8 +15,11 @@
       </section>
       <footer class="modal-card-foot">
         <a class="button is-success" @click="modalevent">
-          <slot name="footer"></slot>
+          <slot name="footer-btn"></slot>
         </a>
+        <span style="margin-left:1rem; color: yellow; font-size:22px;">
+          <slot name="footer"></slot>
+        </span>
       </footer>
     </div>
   </div>

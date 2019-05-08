@@ -1,22 +1,20 @@
 <template>
   <div id="app">
     <div class="background"></div>
-    <div id="nav">
-      <router-link to="/">Búesqueda del tesoro!</router-link>
-      <!-- <router-link to="/about">Start</router-link>| -->
-    </div>
+    <!-- <img src="@/assets/portada.jpeg"> -->
     <router-view/>
   </div>
 </template>
 
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 @import url("https://fonts.googleapis.com/css?family=Pirata+One");
 
 .background {
+  /* Preboda-36.jpg */
   background-image: url("./assets/Preboda-36.jpg");
-  filter: opacity(70%);
+  filter: opacity(75%);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #bcaaa4;
