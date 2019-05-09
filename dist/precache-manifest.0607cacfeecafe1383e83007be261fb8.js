@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/naranja_pista.77bb5985.jpeg"
   },
   {
-    "revision": "1c92e9abbe75519ed578",
+    "revision": "c9bf757317d13ff5b200",
     "url": "/busqueda-del-tesoro/css/app.7eb72873.css"
   },
   {
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/codigo_diccionario.da312025.png"
   },
   {
-    "revision": "900ece4ba525fde0bd7d",
-    "url": "/busqueda-del-tesoro/js/about.9156b352.js"
+    "revision": "566324022d61d7ba2950",
+    "url": "/busqueda-del-tesoro/js/about.3b9cce4a.js"
   },
   {
-    "revision": "1c92e9abbe75519ed578",
-    "url": "/busqueda-del-tesoro/js/app.5d56dcc7.js"
+    "revision": "c9bf757317d13ff5b200",
+    "url": "/busqueda-del-tesoro/js/app.d25d3bb0.js"
   },
   {
     "revision": "57bcd0d9fec0a2b8ede2fe787c43eed2",
@@ -60,11 +60,11 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/Preboda-36.850c3f8a.jpg"
   },
   {
-    "revision": "7439e6a0d12f7556ed5b96448d1281c4",
+    "revision": "2ca607c8742d67c97c9959bd42af8170",
     "url": "/busqueda-del-tesoro/index.html"
   },
   {
-    "revision": "900ece4ba525fde0bd7d",
+    "revision": "566324022d61d7ba2950",
     "url": "/busqueda-del-tesoro/css/about.dbc38d35.css"
   }
 ];
