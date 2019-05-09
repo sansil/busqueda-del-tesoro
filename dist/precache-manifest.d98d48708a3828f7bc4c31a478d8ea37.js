@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/naranja_pista.77bb5985.jpeg"
   },
   {
-    "revision": "77afcd8d822cfd3840ae",
+    "revision": "26a53ddcea9c661c1598",
     "url": "/busqueda-del-tesoro/css/app.438cb47e.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/js/about.f8819043.js"
   },
   {
-    "revision": "77afcd8d822cfd3840ae",
-    "url": "/busqueda-del-tesoro/js/app.d46126d0.js"
+    "revision": "26a53ddcea9c661c1598",
+    "url": "/busqueda-del-tesoro/js/app.3ff8ed53.js"
   },
   {
     "revision": "57bcd0d9fec0a2b8ede2fe787c43eed2",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/busqueda-del-tesoro/img/Preboda-36.850c3f8a.jpg"
   },
   {
-    "revision": "7eeb0299ba7003b01d5428ab39bbfdbf",
+    "revision": "a7e3f1fe7b73aaadd0b574f811b48bef",
     "url": "/busqueda-del-tesoro/index.html"
   },
   {
