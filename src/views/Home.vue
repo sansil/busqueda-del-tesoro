@@ -8,8 +8,9 @@
         <div class="btn-choose">
           <a class="button is-success" @click="goEquipoVerde">Equipo Verde</a>
           <a class="button is-warning" @click="goEquipoAmarillo">Equipo Amarillo</a>
-          <a class="button is-danger" @click="goEquipoRojo">Equipo Rojo</a>
+          <a class="button is-info" @click="goEquipoAzul">Equipo Azul</a>
         </div>
+        <p>Sofi 30</p>
       </div>
     </div>
     <!-- <p>ppp</p> -->
@@ -30,8 +31,8 @@ export default {
     goEquipoAmarillo() {
       this.$router.push({ path: "/juego/amarillo" });
     },
-    goEquipoRojo() {
-      this.$router.push({ path: "/juego/rojo" });
+    goEquipoAzul() {
+      this.$router.push({ path: "/juego/azul" });
     }
   }
 };
@@ -66,9 +67,14 @@ export default {
   transform: translate(-50%, -50%);
 }
 .card-inicio h1 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 0.5rem;
-  color: black;
+  color: #ffdc73;
+}
+
+.card-inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-choose {
