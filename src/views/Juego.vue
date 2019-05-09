@@ -1,7 +1,9 @@
 <template>
   <div class="hero-body home">
     <div class="container">
-      <h1 class="title">Equipo {{equipo}}</h1>
+      <h1 class="title">
+        <span :class="equipo">Equipo {{equipo}}</span>
+      </h1>
       <!-- <h2 class="subtitle">Grupo {{equipo}}</h2> -->
     </div>
 
@@ -277,5 +279,12 @@ export default {
 .pregunta {
   color: red;
 }
+
+/* .rojo {
+  color: #ff2a56;
+}
+.verde {
+  color: #07500c;
+} */
 </style>
 

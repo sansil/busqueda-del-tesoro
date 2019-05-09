@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style scoped>
-.background-start {
+/* .background-start {
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -47,7 +47,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-}
+} */
 
 .contenedor {
   position: relative;

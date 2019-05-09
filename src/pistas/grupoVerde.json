@@ -1,61 +1,61 @@
 {
-  "0": {
+  "6": {
     "codigo": "1345",
     "pista": "La pista se encuentra en el siguiente lugar en el mapa!",
     "con_img": 1,
     "img": "codigo_diccionario.png",
-    "footer": "Psssst! Está relacionado con su vegetación!"
+    "footer": "Pssst! Se refiere a la vegetación del lugar!"
   },
-  "1": {
+  "7": {
     "codigo": "3421",
-    "pista": "La siguiente pista se encuentra en un: <p><b>Populus alba</b></p>",
+    "pista": "Ve a la explanada, la palabra clave es \"impresión\" ",
     "con_img": 0,
     "img": "  ",
     "footer": ""
   },
-  "2": {
+  "1": {
     "codigo": "25",
     "pista": "La respuesta es el código!",
     "con_img": 1,
     "img": "ingenio.jpg",
     "footer": ""
   },
-  "3": {
+  "2": {
     "codigo": "1234",
     "pista": "Los ingredientes del pesto genovece son:<div class=\"pista-div\"> <p>1- Albaca</p><p>2- ajo</p><p>3- Queso Parmesano</p> <p class=\"pregunta\">4- ?</p></div>",
     "con_img": 0,
     "img": "",
     "footer": ""
   },
-  "4": {
+  "5": {
     "codigo": "4613725",
     "pista": "El orden correcto del proceso para hacer vino es: <div class=\"pista-div\"> <p>3- Prensado</p><p>2- Crianza</p><p>1- Fermentación alcóholica</p><p>6- Despalillado</p> <p>4- Cosecha</p><p>5- Embotellado</p><p>7- Fermentación maloláctica</p></div> El orden correcto es el código!",
     "con_img": 0,
     "img": "",
     "footer": ""
   },
-  "5": {
+  "8": {
     "codigo": "1234",
     "pista": "La siguiente pista se encuentra en una planta como la de la imagen",
     "con_img": 1,
     "img": "hojaVid.jpeg",
     "footer": ""
   },
-  "6": {
+  "4": {
     "codigo": "1234",
-    "pista": "La próxima pista se encuentra en: <div class=\"pista-div\">-34.874916, -56.201996</div>",
+    "pista": "Ve a la explanada, la palabra clave es \"brújula\"",
     "con_img": 0,
     "img": "",
     "footer": ""
   },
-  "7": {
+  "3": {
     "codigo": "1234",
     "pista": "La próxima pista se encuentra en el siguiente lugar:",
     "con_img": 1,
     "img": "naranja_pista.jpeg",
     "footer": ""
   },
-  "8": {
+  "0": {
     "codigo": "1234",
     "pista": "La próxima pista se encuentra en el siguiente lugar:",
     "con_img": 1,
@@ -64,7 +64,7 @@
   },
   "9": {
     "codigo": "1234",
-    "pista": "",
+    "pista": "Revisa las frases detrás de los código encontrados, donde crees que se encuentra el último código?",
     "con_img": 0,
     "img": "",
     "footer": ""
