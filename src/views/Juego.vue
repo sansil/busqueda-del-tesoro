@@ -81,7 +81,7 @@
         <p class="modal-text">El tesoro contiene el siguiente mensaje:</p>
         <p class="modal-win-text">
           <b>
-            <i>"30 años no son nada!"</i>
+            <i>"30 años no son nada! "</i>
           </b>
         </p>
         <p class="modal-text">Lleva este mensaje a la Explanada!</p>
