@@ -81,10 +81,10 @@
         <p class="modal-text">El tesoro contiene el siguiente mensaje:</p>
         <p class="modal-win-text">
           <b>
-            <i>"Sofi cra"</i>
+            <i>"30 años no son nada!"</i>
           </b>
         </p>
-        <p class="modal-text">Lleva este mensaje a la carpa principal!</p>
+        <p class="modal-text">Lleva este mensaje a la Explanada!</p>
         <img src="@/assets/hunt_treasure.png">
       </template>
     </modal-juego>
@@ -203,8 +203,8 @@ export default {
   mounted() {
     //this.srcMapaImg = this.getImgUrl("mapa.jpg");
     var pistas = {};
-    if (String(this.equipo) === String("rojo")) {
-      pistas = require("../pistas/grupoRojo.json");
+    if (String(this.equipo) === String("azul")) {
+      pistas = require("../pistas/grupoAzul.json");
     } else if (String(this.equipo) === String("amarillo")) {
       pistas = require("../pistas/grupoAmarillo.json");
     } else if (String(this.equipo) === String("verde")) {
@@ -230,6 +230,7 @@ export default {
 
 .container h1 {
   margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 .codigo_input {
   width: 40%;
