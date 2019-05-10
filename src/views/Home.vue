@@ -7,7 +7,7 @@
         <h1>Búsqueda del Tesoro</h1>
         <div class="btn-choose">
           <a class="button is-success" @click="goEquipoVerde">Equipo Verde</a>
-          <a class="button is-warning" @click="goEquipoAmarillo">Equipo Amarillo</a>
+          <a class="button is-danger" @click="goEquipoRojo">Equipo Rojo</a>
           <a class="button is-info" @click="goEquipoAzul">Equipo Azul</a>
         </div>
         <p>Sofi 30</p>
@@ -28,8 +28,8 @@ export default {
     goEquipoVerde() {
       this.$router.push({ path: "/juego/verde" });
     },
-    goEquipoAmarillo() {
-      this.$router.push({ path: "/juego/amarillo" });
+    goEquipoRojo() {
+      this.$router.push({ path: "/juego/rojo" });
     },
     goEquipoAzul() {
       this.$router.push({ path: "/juego/azul" });
@@ -69,7 +69,6 @@ export default {
 .card-inicio h1 {
   font-size: 1.9rem;
   margin-bottom: 0.5rem;
-  color: #ffdc73;
 }
 
 .card-inicio p {

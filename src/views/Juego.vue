@@ -205,8 +205,8 @@ export default {
     var pistas = {};
     if (String(this.equipo) === String("azul")) {
       pistas = require("../pistas/grupoAzul.json");
-    } else if (String(this.equipo) === String("amarillo")) {
-      pistas = require("../pistas/grupoAmarillo.json");
+    } else if (String(this.equipo) === String("rojo")) {
+      pistas = require("../pistas/grupoRojo.json");
     } else if (String(this.equipo) === String("verde")) {
       pistas = require("../pistas/grupoVerde.json");
     }
