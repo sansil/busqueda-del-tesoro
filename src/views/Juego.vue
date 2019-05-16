@@ -113,7 +113,7 @@
 <script>
 // @ is an alias to /src
 import modalJuego from "@/components/ModalJuego.vue";
-
+import axios from "axios";
 require("@/assets/sass/main.scss");
 require("@/assets/css/animate.css");
 // function handleVisibilityChange() {
@@ -200,15 +200,25 @@ export default {
       return require("../assets/" + pic);
     }
   },
-  mounted() {
+  async mounted() {
     //this.srcMapaImg = this.getImgUrl("mapa.jpg");
     var pistas = {};
     if (String(this.equipo) === String("azul")) {
-      pistas = require("../pistas/grupoAzul.json");
+      const respPistas = await axios.get(
+        "https://raw.githubusercontent.com/sansil/busqueda-del-tesoro/gh-pages/pistas/grupoAzul.json"
+      );
+      pistas = respPistas.data;
+      // pistas = require("@/../public/pistas/grupoAzul.json");
     } else if (String(this.equipo) === String("rojo")) {
-      pistas = require("../pistas/grupoRojo.json");
+      const respPistas = await axios.get(
+        "https://raw.githubusercontent.com/sansil/busqueda-del-tesoro/gh-pages/pistas/grupoRojo.json"
+      );
+      pistas = respPistas.data;
     } else if (String(this.equipo) === String("verde")) {
-      pistas = require("../pistas/grupoVerde.json");
+      const respPistas = await axios.get(
+        "https://raw.githubusercontent.com/sansil/busqueda-del-tesoro/gh-pages/pistas/grupoVerde.json"
+      );
+      pistas = respPistas.data;
     }
     this.pistasDictionary = pistas;
     this.state = {

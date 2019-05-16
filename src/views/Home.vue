@@ -4,13 +4,13 @@
     <div class="contenedor">
       <img src="@/assets/test2.png" alt="img-pre">
       <div class="card-inicio">
-        <h1>Búsqueda del Tesoro</h1>
+        <h1>{{titulo}}</h1>
         <div class="btn-choose">
           <a class="button is-success" @click="goEquipoVerde">Equipo Verde</a>
           <a class="button is-danger" @click="goEquipoRojo">Equipo Rojo</a>
           <a class="button is-info" @click="goEquipoAzul">Equipo Azul</a>
         </div>
-        <p>Sofi 30</p>
+        <p>{{subtitulo}}</p>
       </div>
     </div>
     <!-- <p>ppp</p> -->
@@ -20,9 +20,21 @@
 <script>
 require("@/assets/sass/main.scss");
 require("@/assets/css/animate.css");
+import axios from "axios";
+
 export default {
   data() {
-    return {};
+    return {
+      titulo: "",
+      subtitulo: ""
+    };
+  },
+  async mounted() {
+    const configResp = await axios.get(
+      "https://raw.githubusercontent.com/sansil/busqueda-del-tesoro/gh-pages/pistas/Configuracion.json"
+    );
+    this.titulo = configResp.data.titulo;
+    this.subtitulo = configResp.data.subtitulo;
   },
   methods: {
     goEquipoVerde() {
