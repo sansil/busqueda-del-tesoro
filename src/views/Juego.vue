@@ -173,7 +173,7 @@ export default {
           avance: this.state.avance,
           codigo: "",
           pista: this.pistasDictionary[this.state.avance].pista,
-          img: this.pistasDictionary[this.state.avance].img,
+          img: decodeURIComponent(this.pistasDictionary[this.state.avance].img),
           con_img: this.pistasDictionary[this.state.avance].con_img,
           footer: this.pistasDictionary[this.state.avance].footer
         };
@@ -207,7 +207,9 @@ export default {
       const respPistas = await axios.get(
         "https://raw.githubusercontent.com/sansil/busqueda-del-tesoro/gh-pages/pistas/grupoAzul.json"
       );
+
       pistas = respPistas.data;
+
       // pistas = require("@/../public/pistas/grupoAzul.json");
     } else if (String(this.equipo) === String("rojo")) {
       const respPistas = await axios.get(
@@ -225,7 +227,7 @@ export default {
       avance: 0,
       codigo: "",
       pista: this.pistasDictionary[0].pista,
-      img: this.pistasDictionary[0].img,
+      img: decodeURIComponent(this.pistasDictionary[0].img),
       con_img: this.pistasDictionary[0].con_img,
       footer: this.pistasDictionary[0].footer
     };
