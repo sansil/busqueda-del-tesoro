@@ -103,7 +103,7 @@
       </template>
       <template v-slot:img>
         <div v-if="state.con_img">
-          <img :src="getImgUrl(state.img)">
+          <img :src="state.img">
         </div>
       </template>
     </modal-juego>
@@ -171,9 +171,11 @@ export default {
         this.openModalSucces = true;
         this.state = {
           avance: this.state.avance,
-          codigo: "",
+          codigo: this.pistasDictionary[0].codigo,
           pista: this.pistasDictionary[this.state.avance].pista,
-          img: decodeURIComponent(this.pistasDictionary[this.state.avance].img),
+          img: decodeURIComponent(
+            this.pistasDictionary[this.state.avance].img_url
+          ),
           con_img: this.pistasDictionary[this.state.avance].con_img,
           footer: this.pistasDictionary[this.state.avance].footer
         };
@@ -225,12 +227,13 @@ export default {
     this.pistasDictionary = pistas;
     this.state = {
       avance: 0,
-      codigo: "",
+      codigo: this.pistasDictionary[0].codigo,
       pista: this.pistasDictionary[0].pista,
-      img: decodeURIComponent(this.pistasDictionary[0].img),
+      img: decodeURIComponent(this.pistasDictionary[0].img_url),
       con_img: this.pistasDictionary[0].con_img,
       footer: this.pistasDictionary[0].footer
     };
+    console.log(this.state);
   }
 };
 </script>
