@@ -1,29 +1,9 @@
-# busqueda_del_tesoro
+# Búsqueda del tesoro app
 
-## Project setup
-```
-npm install
-```
+Build your own Treasure hunt game
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Live [demo](https://sansil.github.io/busqueda-cumple-sofi/#/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Club generator
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[generator](https://sansil.github.io/busqueda-del-tesoro-generator/)
